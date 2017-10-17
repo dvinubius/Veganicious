@@ -1,0 +1,96 @@
+/* HEADER */
+.header {
+	font-size: 1.2rem;
+	height: 100vh;
+	width: 100%;
+	padding: 4rem 2rem 0;
+	background: linear-gradient(15deg, hsla(30, 98%, 33%, 0.59) 10%, hsla(14, 23%, 49%, 0.35) 90%), url(../../images/header/bg1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--col-mywhite);
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .row {	
+	display: flex;
+	justify-content: center;
+}
+
+.header .row > div {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header h1, 
+.header h2 {	
+	color: var(--col-mywhite);
+	text-align: center;
+}
+.header h2 {	
+	text-transform: none;
+}
+
+.header-buttons {
+	margin: 2em 0 2em 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;	
+	flex-wrap: wrap;
+}
+
+/* at the moment only used in header, but may be reused in other places. keeping it general*/
+.mybtn {
+	border: 0.15em solid grey;
+	font-size: 1.1rem !important;
+	padding: 0.5em 1em;
+	font-weight: 700 !important;
+	border-radius: 0.2em;
+}
+
+.header-buttons button {
+	margin-right: 1em;
+}
+
+/* Important button in header */
+.header .mybtn1 {
+	color: var(--col-btn1);
+	background-color: var(--col-bg-btn1);
+	border-color: var(--col-btn1);
+	margin-bottom: 1em;
+}
+.header .mybtn1:hover {
+	background-color: var(--col-bg-hover-btn1);
+	color: var(--col-hover-btn1);
+	border-color: var(--col-hover-btn1);
+}
+.header .mybtn1:active, .header .mybtn1:focus {
+	outline: none !important;
+	background-color: var(--col-bg-focus-btn1) !important;
+	color: var(--col-focus-btn1) !important;
+	border-color: var(--col-focus-btn1) !important;
+}
+/* less important button in header */
+.header .mybtn2 {
+	color: var(--col-mywhite);
+	background-color: var(--col-bg-btn1);
+	border-color: var(--col-mywhite);
+}
+.header .mybtn2:hover {
+	background-color: var(--col-bg-hover-btn1);
+	color: var(--col-hover-btn1);
+	border-color: var(--col-hover-btn1);
+}
+.header .mybtn2:active, .header .mybtn1:focus {
+	outline: none !important;
+	background-color: var(--col-bg-focus-btn1) !important;
+	color: var(--col-focus-btn1) !important;
+	border-color: var(--col-focus-btn1) !important;
+}
+

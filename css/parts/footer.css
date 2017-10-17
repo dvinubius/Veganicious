@@ -1,0 +1,64 @@
+/* FOOTER */
+
+footer {
+	padding-bottom: 1.6em;
+	color: var(--col-text-dark);
+	background-color: var(--col-bg-nav);
+/*	using the same as in navbar*/
+	border-top: 2px solid var(--col-pop-darkest);
+	opacity: 0.96;
+	font-size: 1.1rem;
+}
+
+footer h4 {
+	margin-top: 2em;
+}
+
+footer .social {		
+	height: 2.25rem;
+	width: 2.25rem;
+	text-align: center;
+	padding: 0.5em;
+	border: 1px solid #222222;
+/*	same as icon itself*/
+	margin-bottom: 0.75em;
+	margin-right: 0.2em;
+}
+
+.subscribe {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+footer input {
+	height: 2em 9em;
+	width: 70%;
+	max-width: 15em;
+	padding: 0.5em;
+	border: none;
+	background-color: #cccccc;
+/*	bg of input colored like other text in the footer*/
+	color: #000;
+}
+
+footer .btn {
+	padding: 10px 5px 10px;
+	margin: -3px 0 0 5px;
+}
+
+@media (min-width: 768px) {
+	footer .row {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media (min-width: 992px) {
+	footer {
+	/*		Discreet */
+		font-size: 1rem;
+	}
+	footer .row {
+		display: flex;
+		justify-content: space-between;
+	}	
+}

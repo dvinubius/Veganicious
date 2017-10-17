@@ -1,0 +1,44 @@
+/* CLIENTS */
+
+.clients {		
+	padding-bottom: 2em;
+}
+
+.clients .logos {
+	margin: 2em auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--col-mywhite);
+}
+
+.clients img {
+	width: 10em;
+	margin: 2em 2em;
+	opacity: 0.8;
+	transition: all 500ms ease-in-out;
+}
+
+.clients li:hover img {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+@media (min-width:576px) {
+	.clients img {
+		width: 13em;
+		margin: 1.5em 1.5em;		
+	}
+}
+@media (min-width:768px) {
+	.clients img {		
+		margin: 2em 2em;		
+	}
+}
+@media (min-width:992px) {
+	.clients img {
+		width: 15em;
+		margin: 3.5em 3.5em;		
+	}
+}

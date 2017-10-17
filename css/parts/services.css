@@ -1,0 +1,182 @@
+/* PRE-SERVICES */
+
+.pre-services {
+	height: 36rem;
+	box-shadow: none;
+}
+
+.pre-services .container{
+	height: 100%;
+	display:flex;	
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pre-services .wrapper {		
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;	
+	opacity: 0.5;	
+	max-width: 20rem;
+}	
+
+.pre-services .wrapper h2 {
+	color: var(--col-pop-darker);
+}
+.pre-services .wrapper span {
+	font-style: italic;
+	color: var(--col-comp-neutral);
+}
+
+.pre-services img {
+	width: 20rem;
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+
+.pre-services h2, h1 {
+	text-transform: none;	
+}
+
+.pre-services h2 {
+	font-size: 1.6rem;
+	letter-spacing: .06em;
+	line-height: 1.5em;
+	font-weight: 500;
+}
+@media (min-width: 576px) {	
+	.pre-services img {
+		width: 27rem;		
+	}
+	.pre-services .wrapper {
+		max-width: 30rem;
+	}
+}
+	
+/* SERVICES */
+
+.services {
+	padding-top: 0;
+	padding-bottom: 1em;	
+}
+
+/* Not needed at the moment
+.services .row > div:hover {
+	transition: box-shadow 0.15s ease-in; 
+	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.15);
+}
+*/
+
+.services h4 {
+	margin: 1em auto;
+}
+.services p {
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.icon-wrapper {
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.doublette {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--col-comp-neutral);
+}
+
+.binder {
+	margin: 0;
+	padding: 0;
+	width: 10px;
+	height: 3px;
+	
+/*	background-color: var(--col-neutral-dark); not needed now*/
+	background-color: var(--col-comp-neutral);
+}
+
+.my-icon {
+	margin: auto;
+	margin: 0;
+	height: 90px;
+	width: 90px;
+	padding: 15px 15px 15px 15px;
+	border-radius: 50%;
+	background-color: var(--col-comp-neutral);	
+/*	border-top: 5px solid var(--col-comp-neutral-dark);	 not needed now*/
+	border-top: 5px solid transparent;	
+}
+
+.my-single-icon {
+	display: inline-block;
+	margin: auto;	
+	height: 110px;
+	width: 110px;
+	padding: 15px 15px 15px 15px;
+	border-radius: 50%;
+	background-color: var(--col-comp-neutral);
+/*	border-top: 5px solid var(--col-comp-neutral-dark); not needed now	*/
+	border-top: 5px solid transparent;	
+}
+
+/*  NOT NEEDED AT THE MOMENT.
+.my-icon-left {
+	border-right: 5px solid var(--col-theme);
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.my-icon-right {
+	border-left: 5px solid var(--col-theme);
+	padding-left: 15px;
+	padding-right: 15px;
+}
+*/
+
+.my-icon img {
+	display: inline-block;
+	height: 50px;
+	width: 50px;	
+}
+
+.services i {
+	height: 80px;
+	width: 80px;
+	font-size: 30px;
+	padding: 25px 20px;
+	border-radius: 50%;
+	background-color: var(--col-comp-neutral);
+	color: var(--col-mywhite);
+}
+
+.services .mybtn2 {
+	color: var(--col-btn2);
+	background-color: var(--col-bg-btn2);
+	border-color: var(--col-btn2);
+
+	transform: translateY(50%);
+}
+
+.services .mybtn2:hover {
+	background-color: var(--col-bg-hover-btn2);
+	color: var(--col-hover-btn2);
+	border-color: var(--col-hover-btn2);
+}
+.services .mybtn2:active, .services .mybtn2:focus {
+	outline: none !important;
+	background-color: var(--col-bg-focus-btn2) !important;
+	color: var(--col-focus-btn2) !important;
+	border-color: var(--col-focus-btn2) !important;
+}
+
+@media (min-width: 768px) {
+	.services {
+		padding-top: 1em;
+		padding-bottom: 4em;
+	}
+}

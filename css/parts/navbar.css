@@ -1,0 +1,78 @@
+/* NAVIGATION */
+
+.navbar {
+  background-color: var(--col-bg-nav) !important;
+  text-transform: uppercase;
+  font-family: var(--main-font-fam);
+	height: 4rem !important;
+	min-height: 4rem !important;
+/*	border-color: var(--col-border-nav);*/
+	border: none;
+	opacity: 0.97;
+	
+	
+	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.15);
+/*	alt-tabs*/
+}
+
+.navbar-toggle {
+	border-color: var(--col-text-dark) !important;	
+}
+.icon-bar {
+	background-color: var(--col-text-dark) !important;
+}
+
+.navbar-brand {
+	margin: 0;
+	padding: 0;
+	margin-left: 1rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+}
+.navbar-brand img {
+	margin: 0;
+	height: 2.5rem;
+}
+.navbar ul {
+	margin-top: 0;
+}
+
+.navbar li > a {
+	height: 4rem !important;
+	display: flex;
+	align-items: center;
+	font-size:1rem;
+	font-weight: 400;
+	margin: 0;
+	padding-left: 15px;	/* keeping the same as bootstrap brand padding for alignment */
+  color: var(--col-nav) !important;
+	background-color: var(--col-bg-nav);
+ 	transition: color 0.15s ease-out, background-color 0.3s ease-out;
+/*	border-bottom: 1px solid var(--col-border-nav);*/
+}
+.navbar li > a:hover {
+	color: var(--col-nav-hover) !important;
+	background-color: var(--col-bg-nav) !important;
+}
+
+.navbar-collapse {
+	overflow-y: hidden !important;
+}
+
+@media (min-width: 768px) {
+	.navbar li > a {
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+		background-color: initial;
+	}
+	.navbar li:last-child > a {
+		padding-right: 15px; /* default bootstrap padding in navbar - for alignment*/
+	}
+}
+@media (min-width: 992px) {
+	.navbar li > a {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
