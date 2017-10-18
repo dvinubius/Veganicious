@@ -4,15 +4,21 @@
   background-color: var(--col-bg-nav) !important;
   text-transform: uppercase;
   font-family: var(--main-font-fam);
+/*	position: fixed;*/
 	height: 4rem !important;
 	min-height: 4rem !important;
 /*	border-color: var(--col-border-nav);*/
 	border: none;
 	opacity: 0.97;
 	
-	
 	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.15);
-/*	alt-tabs*/
+		
+	transition: top 0.2s;
+}
+
+/* for hiding the navbar when scrolling down*/
+.nav-up {
+	top: -4rem;
 }
 
 .navbar-toggle {
@@ -46,18 +52,23 @@
 	font-weight: 400;
 	margin: 0;
 	padding-left: 15px;	/* keeping the same as bootstrap brand padding for alignment */
-  color: var(--col-nav) !important;
-	background-color: var(--col-bg-nav);
+  color: var(--col-nav) !important;	
  	transition: color 0.15s ease-out, background-color 0.3s ease-out;
-/*	border-bottom: 1px solid var(--col-border-nav);*/
 }
+
+.navbar ul {
+	background-color: var(--col-bg-nav);
+}
+
 .navbar li > a:hover {
 	color: var(--col-nav-hover) !important;
 	background-color: var(--col-bg-nav) !important;
 }
 
-.navbar-collapse {
-	overflow-y: hidden !important;
+.navbar-collapse.in {
+	overflow-y: visible;
+/*	makes the whole list visible at the bottom. 
+	(it overflows vertically )*/
 }
 
 @media (min-width: 768px) {
