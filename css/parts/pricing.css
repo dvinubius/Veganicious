@@ -51,4 +51,12 @@
 	.packages {
 		width: 100%;
 	}
+	.pricing h3 {
+		margin: 2em auto;
+	}
+}
+@media (min-width:1200px) {	
+	.pricing h3 {
+		margin: 3em auto;
+	}
 }
