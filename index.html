@@ -31,12 +31,12 @@
 
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#header">Home</a></li>
+						<li><a href="#fake-banner" onclick="showBanner()">Home</a></li>
 						<li><a href="#pre-services">Services</a></li>
 						<li><a href="#pricing">Specials</a></li>
 						<li><a href="#team">Team</a></li>
 						<li><a href="#clients">Clients</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#contact" onclick="hideBanner()">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -45,14 +45,17 @@
 
 		<!---- End Navigation ----->
 
-		<!-- Header -->
-    <div id="header" class="header">
+		<!-- banner -->
+
+		<div id=fake-banner></div>	<!-- only for navigation to top, since actual banner is fixed	-->
+   
+    <div id="banner" class="banner">
     	<div class="container">
     		<div class="row">
     			<div class="col-md-6 col-sm-9">
 						<h1 class="wow bounceInLeft" data-wow-delay="0.5s">Vegan &amp; Delicious</h1>
 						<h2 class="wow bounceInRight" data-wow-delay="1.1s">Would you like an experience <strong>today</strong> ?</h2>														
-						<div class='header-buttons'>
+						<div class='banner-buttons'>
 							<button class="btn btn-lg btn-success mybtn mybtn1 wow bounceInLeft" data-wow-delay="2s" onmouseup="this.blur();">I'm hungry</button>
 							<button class="btn btn-lg btn-success mybtn mybtn2 wow bounceInRight" data-wow-delay="2s"onmouseup="this.blur();">I'm curious</button>							
 						</div>
@@ -65,8 +68,8 @@
     		</div>
     	</div>
     </div>
-    
-    <section class="pre-services" id='pre-services'>
+  
+    <section class="pre-services" id='pre-services'>    	
     	<div class="container">
     		<img src='images/brand_transparentbg.png'>
     		<div class="wrapper">    			
@@ -141,7 +144,7 @@
 
 		<!--	Slideshow	-->
 
-		<section id="slideshow" class="carousel slide" data-ride="carousel">
+		<div id="slideshow" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
        	<div class="item active">
           <img src="images/slideshow/carousel1-sm.png" class="img-responsive center-block">
@@ -183,7 +186,7 @@
       <a href="#slideshow" class="right carousel-control" data-slide="next">
       	<span class="glyphicon glyphicon-chevron-right"></span>
       </a>
-		</section>
+		</div>
 
 		<!--	End Slideshow	-->
 
@@ -196,7 +199,7 @@
   					<h2>This Week's Specials</h2>
 						<h3>Come in, have a seat.</h3> 
 						<h3>Or have us deliver the good food to you.</h3>
-  					<div class="col-md-3 col-s">
+  					<div class="col-md-3 col-sm-6">
   						<div class="packages">
 								<h4>Royal Soup</h4>
 								<img class="img-thumbnail" src="images/pricing/soup7to5.jpg">
@@ -208,7 +211,7 @@
 								<button class="btn btn-success">Order Now</button>
   						</div>
   					</div>
-  					<div class="col-md-3 col-s">
+  					<div class="col-md-3 col-sm-6">
   						<div class="packages">
 								<h4>Paradise Salad</h4>
 								<img class="img-thumbnail" src="images/pricing/paradise7to5.jpg">
@@ -220,7 +223,7 @@
 								<button class="btn btn-success">Order Now</button>
   						</div>
   					</div>
-  					<div class="col-md-3 col-s">
+  					<div class="col-md-3 col-sm-6">
   						<div class="packages">
 								<h4>Cheese Plate</h4>
 								<img class="img-thumbnail" src="images/pricing/cheese7to5.jpg">
@@ -309,7 +312,7 @@
    	<section class="clients" id="clients">
    		<div class="container">
    			<div class="row">
-   				<h2>Apreciated by</h2>
+   				<h2>Our clients</h2>
    				<div class="logos">
    					<li><img src="images/clients/dna2.png" alt=""></li>
 						<li><img src="images/clients/Logo-Hotel-Timisoara2.jpg" alt=""></li>
@@ -399,7 +402,7 @@
               </script>
     <!-- jQuery required for Bootstrap.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
     <script src="js/main.js"></script>
   </body>
 </html>
