@@ -1,6 +1,7 @@
 @import url(parts/navbar.css);
-@import url(parts/header.css);
+@import url(parts/banner.css);
 @import url(parts/services.css);
+@import url(parts/slideshow.css);
 @import url(parts/pricing.css);
 @import url(parts/team.css);
 @import url(parts/clients.css);
@@ -157,7 +158,6 @@ h4,
 }
 
 
-
 /* these apply to most sections, will override if needed */
 section {	
 	padding-top: 1em;
@@ -203,21 +203,43 @@ section p {
 @media (min-width: 992px) {
 	section {
 		padding-top: 2em;
-		padding-bottom: 5em;
+		padding-bottom: 7em;
 	}
 }
 @media (min-width: 1200px) {
+	section {
+		padding-top: 4em;
+		padding-bottom: 9em;
+	}
+}
 
+/* when using a fixed banner (collapsing effect), this fake banner
+	allows home-navigation and correct positioning of .pre-services section*/
+#fake-banner {
+	height: calc(100vh + 4rem);
+	width: 100%;			
+}
+
+.banner {
+	/*	for collapsing scroll effect - */ 
+	/*combined with adjusted margin-top for the section below */
+	position:fixed;	
+	top: 0;
+	left: 0;
+	z-index:0;
 }
 
 
 /*	for the desired RENDERING of BOX SHADOW at the bottom of a section */
+.pre-services {z-index: 11;}
 .services 	{z-index:10;}
 #slideshow 	{z-index:9;}
 .pricing 		{z-index:8;}
 .team 			{z-index:7;}
 .clients 		{z-index:6;}
 .contact 		{z-index:5;}
+
+
 
 
 
