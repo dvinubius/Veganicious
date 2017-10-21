@@ -1,0 +1,3 @@
+1. Navbar
+- highlight links according to where the scrolltop is (user orientation)
+

@@ -213,20 +213,9 @@ section p {
 	}
 }
 
-/* when using a fixed banner (collapsing effect), this fake banner
-	allows home-navigation and correct positioning of .pre-services section*/
-#fake-banner {
-	height: calc(100vh + 4rem);
-	width: 100%;			
-}
-
 .banner {
-	/*	for collapsing scroll effect - */ 
-	/*combined with adjusted margin-top for the section below */
-	position:fixed;	
-	top: 0;
-	left: 0;
-	z-index:0;
+	/*	for collapsing banner scroll effect - */ 	
+	background-attachment: fixed;
 }
 
 
@@ -238,10 +227,3 @@ section p {
 .team 			{z-index:7;}
 .clients 		{z-index:6;}
 .contact 		{z-index:5;}
-
-
-
-
-
-
-

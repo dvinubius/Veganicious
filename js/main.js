@@ -19,23 +19,7 @@ window.onload = function() {
 
 	// listen for scroll events in order to hide/show
 	// navbar and for correct footer display
-	setInterval(function() {
-
-		/*  for the correct display of the footer (with no banner underneath)*/
-
-		var scrolled = document.documentElement.scrollTop;
-		var total = document.documentElement.offsetHeight;
-		var vh = window.innerHeight;
-		var footer = document.getElementsByTagName('footer')[0].offsetHeight;
-
-		if (total - (scrolled + vh) < footer) {  // footer is visible
-			hideBanner();
-		}
-		if (scrolled < vh) {  // banner is visible
-			showBanner();
-		}
-
-
+	setInterval(function() {		
 		/*  for the scroll-toggle of the navbar*/
 		if (didScroll) {
         hasScrolled();
@@ -53,8 +37,6 @@ window.onload = function() {
 		});
 	});
 }
-
-
 
 /* scroll detection*/
 $(window).scroll(function(event){
