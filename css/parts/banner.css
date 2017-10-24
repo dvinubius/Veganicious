@@ -4,7 +4,7 @@
 	height: 100vh;
 	width: 100%;	
 	padding: 4rem 2rem 0;
-	background: linear-gradient(15deg, hsla(30, 98%, 33%, 0.59) 10%, hsla(14, 23%, 49%, 0.35) 90%), url(../../images/banner/bg1.jpg);
+	background: linear-gradient(15deg, hsla(30, 98%, 33%, 0.59) 10%, hsla(14, 23%, 49%, 0.35) 90%), url(../../images/banner/bg1smaller.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
