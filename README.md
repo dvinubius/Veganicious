@@ -1,5 +1,4 @@
 # Veganicious
 Simple landing page prototype for a vegan food business.
 
-
-Demo at http://dvinubius.thecompletewebhosting.com/projects/veganicious_parralax/
+Created with bootstrap, font-awesome, wow.js and some sense of humour.
