@@ -1,62 +1,63 @@
 /* PRICING */
 
 .pricing h3 {
-	font-size: 1.3rem;
-	margin: 1em auto;
+  font-size: 1.3rem;
+  margin: 1em auto;
 }
 
 .packages {
-	margin-top: 3em !important;
-	padding: 1.6em;
-	border: 1px solid var(--col-border-sections);
-	background-color: white;
-	border-radius: 0.3em;	
-	width: 80%;
-	margin: auto;
-	max-width: 350px;
-	
-	text-align: center;
-	
-	transition: box-shadow 0.15s ease-in; 
-	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.15);
+  margin-top: 3em !important;
+  padding: 1.6em;
+  border: 1px solid var(--col-border-sections);
+  background-color: white;
+  border-radius: 0.3em;
+  width: 80%;
+
+  margin: auto;
+  max-width: 350px;
+
+  text-align: center;
+
+  transition: box-shadow 0.15s ease-in;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.15);
 }
 .packages:hover {
-		box-shadow: 0px 13px 20px 5px rgba(0, 0, 0, 0.2);
-	}
+  box-shadow: 0px 13px 20px 5px rgba(0, 0, 0, 0.2);
+}
 
 .packages img {
-	width: 15em;
+  width: 15em;
 }
 
 .packages li {
-	display:block;
-	padding: 5px;
-	font-size:1.1rem;
+  display: block;
+  padding: 5px;
+  font-size: 1.1rem;
 }
 
 .packages h4,
 .packages h1,
 .packages b {
-	color: var(--col-text-big-card);
+  color: var(--col-text-big-card);
 }
 
-.packages li{
-	color: var(--col-text-small-card);
+.packages li {
+  color: var(--col-text-small-card);
 }
 
 .packages button {
-	margin-top: 0.6em;
+  margin-top: 0.6em;
 }
-@media (min-width:992px) {
-	.packages {
-		width: 100%;
-	}
-	.pricing h3 {
-		margin: 2em auto;
-	}
+@media (min-width: 992px) {
+  .packages {
+    width: 100%;
+  }
+  .pricing h3 {
+    margin: 2em auto;
+  }
 }
-@media (min-width:1200px) {	
-	.pricing h3 {
-		margin: 3em auto;
-	}
+@media (min-width: 1200px) {
+  .pricing h3 {
+    margin: 3em auto;
+  }
 }
